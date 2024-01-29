@@ -171,6 +171,10 @@ input[type=button]:hover {
         width: 100%;
         order: 3;
     }
+    
+    .section {
+        align-self: center;
+    }
 
 }
 
