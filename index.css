@@ -1,3 +1,4 @@
+
 body{
     box-sizing: border-box;
     padding: 0px;
@@ -33,6 +34,7 @@ h1 {
 
 #contacts h1 {
     font-size: 70px;
+    transform: translate();
 }
 
 p {
@@ -77,9 +79,11 @@ h5 {
 
 .contact a {
     padding-left: 10px;
+    transition: color 0.2s ease-in-out;
     font-family: "League Spartan", sans-serif;
     color: white;
     font-size: 20px;
+
 }
 
 .contact svg {
@@ -118,7 +122,12 @@ input[type=button]:hover {
 
 
 #knowledge-container {
+    height: 1020px;
     padding: 20px;
+}
+
+#knowledge-container #title {
+    margin-top: 150px;
 }
 
 #knowledge-items {
@@ -127,17 +136,30 @@ input[type=button]:hover {
 }
 
 .item {
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     padding: 20px;
     background-color: #1E0360;
+    transition: background-color 0.3s ease-in-out;
     margin: 5%;
 }
 
 .item p {
     color: #03C988;
+    font-size: 16px;
 }
 
 .item h1 {
-    font-size: 35px;
+    font-size: 24px;
+}
+
+.item:hover{
+    background-color: #03C988;
+    color: white;
+}
+
+.item:hover > p {
+    color: white;
 }
 
 
